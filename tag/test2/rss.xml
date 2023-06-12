@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>HYXC • Posts by &#34;test2&#34; tag</title>
-        <link>https://blog.haoyuxingchen.top</link>
+        <link>https://xingjunjie123.gitee.io/haoyuxingchen</link>
         <description>逆水行舟,不进则退</description>
         <language>zh-CN</language>
         <pubDate>Tue, 06 Jun 2023 23:06:07 +0800</pubDate>
@@ -10,9 +10,9 @@
         <category>test</category>
         <category>test2</category>
         <item>
-            <guid isPermalink="true">https://blog.haoyuxingchen.top/2023/06/06/hello-world/</guid>
+            <guid isPermalink="true">https://xingjunjie123.gitee.io/haoyuxingchen/2023/06/06/hello-world/</guid>
             <title>Hello World</title>
-            <link>https://blog.haoyuxingchen.top/2023/06/06/hello-world/</link>
+            <link>https://xingjunjie123.gitee.io/haoyuxingchen/2023/06/06/hello-world/</link>
             <category>test</category>
             <category>test2</category>
             <pubDate>Tue, 06 Jun 2023 23:06:07 +0800</pubDate>
