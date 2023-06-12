@@ -1,23 +1,22 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.haoyuxingchen.top</id>
-    <title>HYXC</title>
-    <link href="https://blog.haoyuxingchen.top" />
-    <updated>2023-06-07T09:29:36.000Z</updated>
-    <category term="test" />
-    <category term="test2" />
-    <entry>
-        <id>https://blog.haoyuxingchen.top/2023/06/07/test/</id>
-        <title>test</title>
-        <link rel="alternate" href="https://blog.haoyuxingchen.top/2023/06/07/test/"/>
-        <content type="html"></content>
-        <updated>2023-06-07T09:29:36.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://blog.haoyuxingchen.top/2023/06/06/hello-world/</id>
-        <title>Hello World</title>
-        <link rel="alternate" href="https://blog.haoyuxingchen.top/2023/06/06/hello-world/"/>
-        <content type="html">&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+<rss version="2.0">
+    <channel>
+        <title>HYXC • Posts by &#34;diary&#34; category</title>
+        <link>https://blog.haoyuxingchen.top</link>
+        <description>逆水行舟,不进则退</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 06 Jun 2023 23:06:07 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Jun 2023 23:06:07 +0800</lastBuildDate>
+        <category>test</category>
+        <category>test2</category>
+        <item>
+            <guid isPermalink="true">https://blog.haoyuxingchen.top/2023/06/06/hello-world/</guid>
+            <title>Hello World</title>
+            <link>https://blog.haoyuxingchen.top/2023/06/06/hello-world/</link>
+            <category>test</category>
+            <category>test2</category>
+            <pubDate>Tue, 06 Jun 2023 23:06:07 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo new &amp;quot;My New Post&amp;quot;&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo server&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -29,9 +28,7 @@
 &lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-bash&#34; data-language=&#34;bash&#34;&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hexo deploy&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-        <category term="test" />
-        <category term="test2" />
-        <updated>2023-06-06T15:06:07.025Z</updated>
-    </entry>
-</feed>
+ ]]></description>
+        </item>
+    </channel>
+</rss>
