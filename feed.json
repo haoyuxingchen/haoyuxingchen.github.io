@@ -2,22 +2,22 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "HYXC",
     "description": "逆水行舟,不进则退",
-    "home_page_url": "https://xingjunjie123.gitee.io/haoyuxingchen",
+    "home_page_url": "https://haoyuxingchen.github.io",
     "items": [
         {
-            "id": "https://xingjunjie123.gitee.io/haoyuxingchen/2023/06/07/test/",
-            "url": "https://xingjunjie123.gitee.io/haoyuxingchen/2023/06/07/test/",
+            "id": "https://haoyuxingchen.github.io/2023/06/07/test/",
+            "url": "https://haoyuxingchen.github.io/2023/06/07/test/",
             "title": "test",
             "date_published": "2023-06-07T09:29:36.000Z",
             "content_html": "",
             "tags": []
         },
         {
-            "id": "https://xingjunjie123.gitee.io/haoyuxingchen/2023/06/06/hello-world/",
-            "url": "https://xingjunjie123.gitee.io/haoyuxingchen/2023/06/06/hello-world/",
+            "id": "https://haoyuxingchen.github.io/2023/06/06/hello-world/",
+            "url": "https://haoyuxingchen.github.io/2023/06/06/hello-world/",
             "title": "Hello World",
             "date_published": "2023-06-06T15:06:07.025Z",
-            "content_html": "<h2 id=\"quick-start\"><a class=\"markdownIt-Anchor\" href=\"#quick-start\">#</a> Quick Start</h2>\n<h3 id=\"create-a-new-post\"><a class=\"markdownIt-Anchor\" href=\"#create-a-new-post\">#</a> Create a new post</h3>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo new &quot;My New Post&quot;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p>More info: <a href=\"https://hexo.io/docs/writing.html\">Writing</a></p>\n<h3 id=\"run-server\"><a class=\"markdownIt-Anchor\" href=\"#run-server\">#</a> Run server</h3>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo server<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p>More info: <a href=\"https://hexo.io/docs/server.html\">Server</a></p>\n<h3 id=\"generate-static-files\"><a class=\"markdownIt-Anchor\" href=\"#generate-static-files\">#</a> Generate static files</h3>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo generate<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p>More info: <a href=\"https://hexo.io/docs/generating.html\">Generating</a></p>\n<h3 id=\"deploy-to-remote-sites\"><a class=\"markdownIt-Anchor\" href=\"#deploy-to-remote-sites\">#</a> Deploy to remote sites</h3>\n<pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo deploy<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n<p>More info: <a href=\"https://hexo.io/docs/one-command-deployment.html\">Deployment</a></p>\n",
+            "content_html": "<h2 id=\"Quick-Start\"><a href=\"#Quick-Start\" class=\"headerlink\" title=\"Quick Start\"></a>Quick Start</h2><h3 id=\"Create-a-new-post\"><a href=\"#Create-a-new-post\" class=\"headerlink\" title=\"Create a new post\"></a>Create a new post</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo new &quot;My New Post&quot;<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/writing.html\">Writing</a></p>\n<h3 id=\"Run-server\"><a href=\"#Run-server\" class=\"headerlink\" title=\"Run server\"></a>Run server</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo server<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/server.html\">Server</a></p>\n<h3 id=\"Generate-static-files\"><a href=\"#Generate-static-files\" class=\"headerlink\" title=\"Generate static files\"></a>Generate static files</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo generate<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/generating.html\">Generating</a></p>\n<h3 id=\"Deploy-to-remote-sites\"><a href=\"#Deploy-to-remote-sites\" class=\"headerlink\" title=\"Deploy to remote sites\"></a>Deploy to remote sites</h3><pre class=\"line-numbers language-bash\" data-language=\"bash\"><code class=\"language-bash\">$ hexo deploy<span aria-hidden=\"true\" class=\"line-numbers-rows\"><span></span></span></code></pre>\n\n<p>More info: <a href=\"https://hexo.io/docs/one-command-deployment.html\">Deployment</a></p>\n",
             "tags": [
                 "test",
                 "test2"
