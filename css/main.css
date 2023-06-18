@@ -1209,8 +1209,7 @@ pre code {
     margin: 0 5px;
   }
 }
-.pagination .page-number.current,
-.algolia-pagination .current .page-number {
+.pagination .page-number.current {
   background: #ccc;
   border-color: #ccc;
   color: var(--content-bg-color);
@@ -2672,34 +2671,25 @@ ul.breadcrumb li:last-child {
   border-bottom: 1px dashed #ccc;
   padding: 5px 0;
 }
-.search-input-container {
+.search-popup .search-input-container {
   flex-grow: 1;
-}
-.search-input-container form {
   padding: 2px;
 }
-.search-stats {
-  align-items: center;
+.search-popup .no-result {
   display: flex;
-  justify-content: space-between;
 }
-.search-stats img {
-  height: 1em;
-  margin: 0;
+.search-popup .search-result-list {
+  width: 100%;
 }
-.algolia-pagination {
-  margin: 40px 0;
-  opacity: 1;
-  padding: 0;
+.search-popup .search-result-icon {
+  color: #ccc;
+  margin: auto;
 }
-.algolia-pagination .pagination-item {
-  display: inline-block;
-}
-.algolia-pagination .current .page-number {
-  cursor: default;
-}
-.algolia-pagination .disabled-item {
-  visibility: hidden;
+mark.search-keyword {
+  background: transparent;
+  border-bottom: 1px dashed #ff2a2a;
+  color: #ff2a2a;
+  font-weight: bold;
 }
 .use-motion .animated {
   animation-fill-mode: none;
@@ -2885,7 +2875,7 @@ header.header {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #c6dac2;
+  background: #05ffff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2939,10 +2929,6 @@ header.header {
   height: 1rem;
   width: 1rem;
   border-radius: 0rem;
-/*鼠标停留在图标上时，图标呈现发光效果*/
-}
-.zhihu:hover {
-  opacity: 1;
 }
 .bilibili {
   background-image: url("/images/bilibili.svg");
@@ -2953,10 +2939,6 @@ header.header {
   height: 1rem;
   width: 1rem;
   border-radius: 0rem;
-/*鼠标停留在图标上时，图标呈现发光效果*/
-}
-.bilibili:hover {
-  opacity: 1;
 }
 .csdn {
   background-image: url("/images/csdn.svg");
@@ -2967,10 +2949,6 @@ header.header {
   height: 1rem;
   width: 1rem;
   border-radius: 0rem;
-/*鼠标停留在图标上时，图标呈现发光效果*/
-}
-.csdn:hover {
-  opacity: 1;
 }
 .gitee {
   background-image: url("/images/gitee.svg");
@@ -2981,8 +2959,17 @@ header.header {
   height: 1rem;
   width: 1rem;
   border-radius: 0rem;
-/*鼠标停留在图标上时，图标呈现发光效果*/
 }
-.gitee:hover {
+/*next主题侧边栏图标的hover高亮问题*/
+.links-of-author-item a:hover .zhihu {
+  opacity: 1;
+}
+.links-of-author-item a:hover .bilibili {
+  opacity: 1;
+}
+.links-of-author-item a:hover .csdn {
+  opacity: 1;
+}
+.links-of-author-item a:hover .gitee {
   opacity: 1;
 }
