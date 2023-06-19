@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/06/06/hello-world/</url>
-    <content><![CDATA[<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;My New Post&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<img src="/2023/06/06/hello-world/image-20230618233325865.png" class="" title="image-20230618233325865">
+    <title>建站</title>
+    <url>/2023/06/19/%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<p>之前有开发过一个博客前后端，后来还是放弃了搭建（服务器太贵了，维护升级代码也需要大量时间），买个域名用 github 还是省事，毕竟是为了写博客，有一个满足自己写作的平台就好了（嗯 花里胡哨的看多了还是简洁的好），嗯，目前来说就用 hexo 好了，之前的代码就用虚拟机跑跑算了。。</p>
 ]]></content>
       <categories>
-        <category>Diary</category>
-        <category>PlayStation</category>
-        <category>Games</category>
-        <category>Life</category>
+        <category>日常</category>
       </categories>
-      <tags>
-        <tag>test</tag>
-        <tag>test2</tag>
-      </tags>
   </entry>
 </search>
