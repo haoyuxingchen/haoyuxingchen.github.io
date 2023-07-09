@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>HYXC</title>
+        <title>HYXC • Posts by &#34;cifar&#34; tag</title>
         <link>https://haoyuxingchen.github.io</link>
         <description>逆水行舟,不进则退</description>
         <language>zh-CN</language>
@@ -148,14 +148,6 @@ def imwrite_images(k):#k的值可以选择1-10000范围内的值
     print(&amp;quot;%d张图片保存完毕&amp;quot;%k)
 
 imwrite_images(100)&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://haoyuxingchen.github.io/2023/06/19/%E5%BB%BA%E7%AB%99/</guid>
-            <title>建站</title>
-            <link>https://haoyuxingchen.github.io/2023/06/19/%E5%BB%BA%E7%AB%99/</link>
-            <pubDate>Mon, 19 Jun 2023 10:48:42 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;之前有开发过一个博客前后端，后来还是放弃了搭建（服务器太贵了，维护升级代码也需要大量时间），买个域名用 github 还是省事，毕竟是为了写博客，有一个满足自己写作的平台就好了（嗯 花里胡哨的看多了还是简洁的好），嗯，目前来说就用 hexo 好了，之前的代码就用虚拟机跑跑算了。。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "HYXC",
+    "title": "HYXC • All posts by \"使用教程\" tag",
     "description": "逆水行舟,不进则退",
     "home_page_url": "https://haoyuxingchen.github.io",
     "items": [
@@ -14,14 +14,6 @@
                 "cifar",
                 "使用教程"
             ]
-        },
-        {
-            "id": "https://haoyuxingchen.github.io/2023/06/19/%E5%BB%BA%E7%AB%99/",
-            "url": "https://haoyuxingchen.github.io/2023/06/19/%E5%BB%BA%E7%AB%99/",
-            "title": "建站",
-            "date_published": "2023-06-19T02:48:42.207Z",
-            "content_html": "<p>之前有开发过一个博客前后端，后来还是放弃了搭建（服务器太贵了，维护升级代码也需要大量时间），买个域名用 github 还是省事，毕竟是为了写博客，有一个满足自己写作的平台就好了（嗯 花里胡哨的看多了还是简洁的好），嗯，目前来说就用 hexo 好了，之前的代码就用虚拟机跑跑算了。。</p>\n",
-            "tags": []
         }
     ]
 }
