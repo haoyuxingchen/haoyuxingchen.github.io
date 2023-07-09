@@ -10,27 +10,20 @@
         <id>https://haoyuxingchen.github.io/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/</id>
         <title>CIFAR数据集使用(介绍、下载读取、可视化显示、另存为图片)</title>
         <link rel="alternate" href="https://haoyuxingchen.github.io/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/"/>
-        <content type="html">&lt;h1 id=&#34;cifar10数据集&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cifar10数据集&#34;&gt;#&lt;/a&gt; cifar10 数据集&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_40755283/article/details/125209463&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;数据集介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据集介绍&#34;&gt;#&lt;/a&gt; 数据集介绍&lt;/h2&gt;
-&lt;p&gt;CIFAR-10 是由 Hinton 的学生 Alex Krizhevsky 和 Ilya Sutskever 整理的一个用于识别普适物体的小型数据集。一共包含 10 个类别的 RGB 彩色图 片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。图片的尺寸为 32×32 ，数据集中一共有 50000 张训练图片和 10000 张测试图片。&lt;/p&gt;
+        <content type="html">&lt;h1 id=&#34;cifar10数据集&#34;&gt;&lt;a href=&#34;#cifar10数据集&#34; class=&#34;headerlink&#34; title=&#34;cifar10数据集&#34;&gt;&lt;/a&gt;cifar10数据集&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/qq_40755283/article/details/125209463&#34;&gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;数据集介绍&#34;&gt;&lt;a href=&#34;#数据集介绍&#34; class=&#34;headerlink&#34; title=&#34;数据集介绍&#34;&gt;&lt;/a&gt;数据集介绍&lt;/h2&gt;&lt;p&gt;CIFAR-10 是由 Hinton 的学生 Alex Krizhevsky 和 Ilya Sutskever 整理的一个用于识别普适物体的小型数据集。一共包含 10 个类别的 RGB 彩色图 片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。图片的尺寸为 32×32 ，数据集中一共有 50000 张训练图片和 10000 张测试图片。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;与 MNIST 数据集中目比， CIFAR-10 具有以下不同点：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;CIFAR-10 是 3 通道的彩色 RGB 图像，而 MNIST 是灰度图像。&lt;br&gt;
-CIFAR-10 的图片尺寸为 32×32， 而 MNIST 的图片尺寸为 28×28，比 MNIST 稍大。&lt;br&gt;
-相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、 特征都不尽相同，这为识别带来很大困难。 直接的线性模型如 Softmax 在 CIFAR-10 上表现得很差&lt;/p&gt;
-&lt;h2 id=&#34;数据集下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据集下载&#34;&gt;#&lt;/a&gt; 数据集下载&lt;/h2&gt;
-&lt;p&gt;官方下载地址：（共有三个版本：python，matlab，binary version 适用于 C 语言）&lt;/p&gt;
+&lt;p&gt;CIFAR-10 是 3 通道的彩色 RGB 图像，而 MNIST 是灰度图像。&lt;br&gt;CIFAR-10 的图片尺寸为 32×32， 而 MNIST 的图片尺寸为 28×28，比 MNIST 稍大。&lt;br&gt;相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、 特征都不尽相同，这为识别带来很大困难。 直接的线性模型如 Softmax 在 CIFAR-10 上表现得很差&lt;/p&gt;
+&lt;h2 id=&#34;数据集下载&#34;&gt;&lt;a href=&#34;#数据集下载&#34; class=&#34;headerlink&#34; title=&#34;数据集下载&#34;&gt;&lt;/a&gt;数据集下载&lt;/h2&gt;&lt;p&gt;官方下载地址：（共有三个版本：python，matlab，binary version 适用于C语言）&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz&#34;&gt;http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz&#34;&gt;http://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz&#34;&gt;http://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;数据集目录结构&lt;br&gt;
- 5 个训练批次 + 1 个测试批次，每一批 10000 张图片。&lt;/p&gt;
-&lt;p&gt;测试批次包含 10000 张图片，是由每一类图片随机抽取出 1000 张组成的集合。&lt;/p&gt;
-&lt;p&gt;训练批次是由剩下的 50000 张图片打乱顺序，然后&lt;strong&gt;随机分成 5 份&lt;/strong&gt;，所以可能某个训练批次中 10 个种类的图片数量不是对等的，会出现一个类的图片数量比另一类多的情况&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709180752904.png&#34; alt=&#34;image-20230709180752904&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;本地数据集导入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本地数据集导入&#34;&gt;#&lt;/a&gt; 本地数据集导入&lt;/h2&gt;
-&lt;h3 id=&#34;本地导入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本地导入&#34;&gt;#&lt;/a&gt; &lt;strong&gt;本地导入&lt;/strong&gt;&lt;/h3&gt;
-&lt;pre class=&#34;line-numbers language-python3&#34; data-language=&#34;python3&#34;&gt;&lt;code class=&#34;language-python3&#34;&gt;import numpy as np
+&lt;p&gt;数据集目录结构&lt;br&gt;5个训练批次 + 1个测试批次，每一批10000张图片。&lt;/p&gt;
+&lt;p&gt;测试批次包含10000张图片，是由每一类图片随机抽取出1000张组成的集合。&lt;/p&gt;
+&lt;p&gt;训练批次是由剩下的50000张图片打乱顺序，然后&lt;strong&gt;随机分成5份&lt;/strong&gt;，所以可能某个训练批次中10个种类的图片数量不是对等的，会出现一个类的图片数量比另一类多的情况&lt;/p&gt;
+&lt;img src=&#34;/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709180752904.png&#34; class=&#34;&#34; title=&#34;image-20230709180752904&#34;&gt;
+
+&lt;h2 id=&#34;本地数据集导入&#34;&gt;&lt;a href=&#34;#本地数据集导入&#34; class=&#34;headerlink&#34; title=&#34;本地数据集导入&#34;&gt;&lt;/a&gt;本地数据集导入&lt;/h2&gt;&lt;h3 id=&#34;本地导入&#34;&gt;&lt;a href=&#34;#本地导入&#34; class=&#34;headerlink&#34; title=&#34;本地导入&#34;&gt;&lt;/a&gt;&lt;strong&gt;本地导入&lt;/strong&gt;&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-python3&#34; data-language=&#34;python3&#34;&gt;&lt;code class=&#34;language-python3&#34;&gt;import numpy as np
 import cv2
 
 # 示例函数
@@ -47,7 +40,8 @@ def unpickle(file):
         dict &amp;#x3D; pickle.load(fo, encoding&amp;#x3D;&amp;#39;bytes&amp;#39;)
     return dict
 &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;选取 data_batch_1 可视化其中一张图&lt;/p&gt;
+
+&lt;p&gt;选取data_batch_1可视化其中一张图&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;#打开cifar-10文件的data_batch_1
 data_batch&amp;#x3D;unpickle(&amp;quot;data_batch_1&amp;quot;)
 
@@ -58,9 +52,11 @@ data_batch&amp;#x3D;unpickle(&amp;quot;data_batch_1&amp;quot;)
 # b&amp;#39;filenames&amp;#39;
 
 data_batch&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;打印可看到以下结果：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709185729743.png&#34; alt=&#34;image-20230709185729743&#34;&gt;&lt;/p&gt;
-&lt;p&gt;一批次的数据集中有 4 个字典键，我们需要用到的就是 &lt;strong&gt;数据标签&lt;/strong&gt; 和 &lt;strong&gt;数据内容（10000×32×32×3，10000 张 32×32 大小为 rgb 三通道的图片）&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&#34;/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709185729743.png&#34; class=&#34;&#34; title=&#34;image-20230709185729743&#34;&gt;
+
+&lt;p&gt;一批次的数据集中有4个字典键，我们需要用到的就是 &lt;strong&gt;数据标签&lt;/strong&gt; 和 &lt;strong&gt;数据内容（10000×32×32×3，10000张32×32大小为rgb三通道的图片）&lt;/strong&gt;&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;cifar_label&amp;#x3D;data_batch[b&amp;#39;labels&amp;#39;]
 cifar_data&amp;#x3D;data_batch[b&amp;#39;data&amp;#39;]
 
@@ -69,20 +65,18 @@ cifar_label&amp;#x3D;np.array(cifar_label)
 print(cifar_label.shape)
 cifar_data&amp;#x3D;np.array(cifar_data)
 print(cifar_data.shape)&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;输出&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;(10000,)
 (10000, 3072)&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;给 0-9 十个数字标签 手动打上文字标签&lt;/p&gt;
 &lt;pre class=&#34;line-numbers language-none&#34;&gt;&lt;code class=&#34;language-none&#34;&gt;label_name&amp;#x3D;[&amp;#39;airplane&amp;#39;,&amp;#39;automobile&amp;#39;,&amp;#39;brid&amp;#39;,&amp;#39;cat&amp;#39;,&amp;#39;deer&amp;#39;,&amp;#39;dog&amp;#39;,&amp;#39;frog&amp;#39;,&amp;#39;horse&amp;#39;,&amp;#39;ship&amp;#39;,&amp;#39;truck&amp;#39;]
 &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;注意事项以及重点：&lt;/p&gt;
-&lt;p&gt;导包 matplotlib.pyplot ，由于环境用的 jupyter notebook，还要在里面能显示，还得加上 % matplotlib inline&lt;br&gt;
-cifar_data [1] 是长度为 3072 的数据，为数据集中第 2 张图片&lt;br&gt;
- reshap () 函数参数 - 1 的意思是一个未知量，将其他矩阵维度输入后会自动生成一个完整矩阵&lt;br&gt;
-数组的排序方式是依次按照 r,g,b 三通道，不是之前某个地方学到的 b,g,r 的顺序&lt;br&gt;
-最坑的地方以为 cv2 可以直接读取 numpy 数组，结果发现要归一化才能读！！！&lt;/p&gt;
-&lt;h3 id=&#34;显示图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#显示图片&#34;&gt;#&lt;/a&gt; 显示图片&lt;/h3&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;# 拿第2个图片的np矩阵举例，将rgb矩阵转换为可显示图片
+&lt;p&gt;导包 matplotlib.pyplot ，由于环境用的jupyter notebook，还要在里面能显示，还得加上 %matplotlib inline&lt;br&gt;cifar_data[1]是长度为3072的数据，为数据集中第2张图片&lt;br&gt;reshap() 函数参数-1的意思是一个未知量，将其他矩阵维度输入后会自动生成一个完整矩阵&lt;br&gt;数组的排序方式是依次按照 r,g,b 三通道，不是之前某个地方学到的b,g,r的顺序&lt;br&gt;最坑的地方以为cv2可以直接读取numpy数组，结果发现要归一化才能读！！！&lt;/p&gt;
+&lt;h3 id=&#34;显示图片&#34;&gt;&lt;a href=&#34;#显示图片&#34; class=&#34;headerlink&#34; title=&#34;显示图片&#34;&gt;&lt;/a&gt;显示图片&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;# 拿第2个图片的np矩阵举例，将rgb矩阵转换为可显示图片
 
 import matplotlib.pyplot as plt
 %matplotlib inline
@@ -104,9 +98,10 @@ img[:,:,2]&amp;#x3D;b&amp;#x2F;255
 
 plt.imshow(img)
 &lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709190518314.png&#34; alt=&#34;image-20230709190518314&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;另存为图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#另存为图片&#34;&gt;#&lt;/a&gt; 另存为图片&lt;/h3&gt;
-&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;# 参考代码
+
+&lt;img src=&#34;/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709190518314.png&#34; class=&#34;&#34; title=&#34;image-20230709190518314&#34;&gt;
+
+&lt;h3 id=&#34;另存为图片&#34;&gt;&lt;a href=&#34;#另存为图片&#34; class=&#34;headerlink&#34; title=&#34;另存为图片&#34;&gt;&lt;/a&gt;另存为图片&lt;/h3&gt;&lt;pre class=&#34;line-numbers language-python&#34; data-language=&#34;python&#34;&gt;&lt;code class=&#34;language-python&#34;&gt;# 参考代码
 import numpy as np
 import cv2
 
@@ -142,6 +137,7 @@ def imwrite_images(k):#k的值可以选择1-10000范围内的值
     print(&amp;quot;%d张图片保存完毕&amp;quot;%k)
 
 imwrite_images(100)&lt;span aria-hidden=&#34;true&#34; class=&#34;line-numbers-rows&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
 </content>
         <category term="cifar" />
         <category term="使用教程" />
