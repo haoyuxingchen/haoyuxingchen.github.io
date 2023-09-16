@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>建站</title>
-    <url>/2023/06/19/%E5%BB%BA%E7%AB%99/</url>
-    <content><![CDATA[<p>之前有开发过一个博客前后端，后来还是放弃了搭建（服务器太贵了，维护升级代码也需要大量时间），买个域名用github还是省事，毕竟是为了写博客，有一个满足自己写作的平台就好了（嗯 花里胡哨的看多了还是简洁的好），嗯，目前来说就用hexo好了，之前的代码就用虚拟机跑跑算了。。</p>
-]]></content>
-      <categories>
-        <category>日常</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CIFAR数据集使用(介绍、下载读取、可视化显示、另存为图片)</title>
     <url>/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<h1 id="cifar10数据集"><a href="#cifar10数据集" class="headerlink" title="cifar10数据集"></a>cifar10数据集</h1><p><a href="https://blog.csdn.net/qq_40755283/article/details/125209463">参考</a></p>
-<h2 id="数据集介绍"><a href="#数据集介绍" class="headerlink" title="数据集介绍"></a>数据集介绍</h2><p>CIFAR-10 是由 Hinton 的学生 Alex Krizhevsky 和 Ilya Sutskever 整理的一个用于识别普适物体的小型数据集。一共包含 10 个类别的 RGB 彩色图 片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。图片的尺寸为 32×32 ，数据集中一共有 50000 张训练图片和 10000 张测试图片。</p>
+    <content><![CDATA[<h1 id="cifar10数据集"><a class="markdownIt-Anchor" href="#cifar10数据集">#</a> cifar10 数据集</h1>
+<p><a href="https://blog.csdn.net/qq_40755283/article/details/125209463">参考</a></p>
+<h2 id="数据集介绍"><a class="markdownIt-Anchor" href="#数据集介绍">#</a> 数据集介绍</h2>
+<p>CIFAR-10 是由 Hinton 的学生 Alex Krizhevsky 和 Ilya Sutskever 整理的一个用于识别普适物体的小型数据集。一共包含 10 个类别的 RGB 彩色图 片：飞机（ airplane ）、汽车（ automobile ）、鸟类（ bird ）、猫（ cat ）、鹿（ deer ）、狗（ dog ）、蛙类（ frog ）、马（ horse ）、船（ ship ）和卡车（ truck ）。图片的尺寸为 32×32 ，数据集中一共有 50000 张训练图片和 10000 张测试图片。</p>
+<span id="more"></span>
 <p><strong>与 MNIST 数据集中目比， CIFAR-10 具有以下不同点：</strong></p>
-<p>CIFAR-10 是 3 通道的彩色 RGB 图像，而 MNIST 是灰度图像。<br>CIFAR-10 的图片尺寸为 32×32， 而 MNIST 的图片尺寸为 28×28，比 MNIST 稍大。<br>相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、 特征都不尽相同，这为识别带来很大困难。 直接的线性模型如 Softmax 在 CIFAR-10 上表现得很差</p>
-<h2 id="数据集下载"><a href="#数据集下载" class="headerlink" title="数据集下载"></a>数据集下载</h2><p>官方下载地址：（共有三个版本：python，matlab，binary version 适用于C语言）</p>
+<p>CIFAR-10 是 3 通道的彩色 RGB 图像，而 MNIST 是灰度图像。<br>
+CIFAR-10 的图片尺寸为 32×32， 而 MNIST 的图片尺寸为 28×28，比 MNIST 稍大。<br>
+相比于手写字符， CIFAR-10 含有的是现实世界中真实的物体，不仅噪声很大，而且物体的比例、 特征都不尽相同，这为识别带来很大困难。 直接的线性模型如 Softmax 在 CIFAR-10 上表现得很差</p>
+<h2 id="数据集下载"><a class="markdownIt-Anchor" href="#数据集下载">#</a> 数据集下载</h2>
+<p>官方下载地址：（共有三个版本：python，matlab，binary version 适用于 C 语言）</p>
 <p><a href="http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz">http://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz</a></p>
 <p><a href="http://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz">http://www.cs.toronto.edu/~kriz/cifar-10-matlab.tar.gz</a></p>
 <p><a href="http://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz">http://www.cs.toronto.edu/~kriz/cifar-10-binary.tar.gz</a></p>
-<p>数据集目录结构<br>5个训练批次 + 1个测试批次，每一批10000张图片。</p>
-<p>测试批次包含10000张图片，是由每一类图片随机抽取出1000张组成的集合。</p>
-<p>训练批次是由剩下的50000张图片打乱顺序，然后<strong>随机分成5份</strong>，所以可能某个训练批次中10个种类的图片数量不是对等的，会出现一个类的图片数量比另一类多的情况</p>
+<p>数据集目录结构<br>
+ 5 个训练批次 + 1 个测试批次，每一批 10000 张图片。</p>
+<p>测试批次包含 10000 张图片，是由每一类图片随机抽取出 1000 张组成的集合。</p>
+<p>训练批次是由剩下的 50000 张图片打乱顺序，然后<strong>随机分成 5 份</strong>，所以可能某个训练批次中 10 个种类的图片数量不是对等的，会出现一个类的图片数量比另一类多的情况</p>
 <img src="/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709180752904.png" class="" title="image-20230709180752904">
-
-<h2 id="本地数据集导入"><a href="#本地数据集导入" class="headerlink" title="本地数据集导入"></a>本地数据集导入</h2><h3 id="本地导入"><a href="#本地导入" class="headerlink" title="本地导入"></a><strong>本地导入</strong></h3><pre class="line-numbers language-python3" data-language="python3"><code class="language-python3">import numpy as np
+<h2 id="本地数据集导入"><a class="markdownIt-Anchor" href="#本地数据集导入">#</a> 本地数据集导入</h2>
+<h3 id="本地导入"><a class="markdownIt-Anchor" href="#本地导入">#</a> <strong>本地导入</strong></h3>
+<pre class="line-numbers language-python3" data-language="python3"><code class="language-python3">import numpy as np
 import cv2
 
 # 示例函数
@@ -42,8 +41,7 @@ def unpickle(file):
         dict &#x3D; pickle.load(fo, encoding&#x3D;&#39;bytes&#39;)
     return dict
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>选取data_batch_1可视化其中一张图</p>
+<p>选取 data_batch_1 可视化其中一张图</p>
 <pre class="line-numbers language-none"><code class="language-none">#打开cifar-10文件的data_batch_1
 data_batch&#x3D;unpickle(&quot;data_batch_1&quot;)
 
@@ -54,11 +52,9 @@ data_batch&#x3D;unpickle(&quot;data_batch_1&quot;)
 # b&#39;filenames&#39;
 
 data_batch<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>打印可看到以下结果：</p>
 <img src="/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709185729743.png" class="" title="image-20230709185729743">
-
-<p>一批次的数据集中有4个字典键，我们需要用到的就是 <strong>数据标签</strong> 和 <strong>数据内容（10000×32×32×3，10000张32×32大小为rgb三通道的图片）</strong></p>
+<p>一批次的数据集中有 4 个字典键，我们需要用到的就是 <strong>数据标签</strong> 和 <strong>数据内容（10000×32×32×3，10000 张 32×32 大小为 rgb 三通道的图片）</strong></p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">cifar_label&#x3D;data_batch[b&#39;labels&#39;]
 cifar_data&#x3D;data_batch[b&#39;data&#39;]
 
@@ -67,18 +63,20 @@ cifar_label&#x3D;np.array(cifar_label)
 print(cifar_label.shape)
 cifar_data&#x3D;np.array(cifar_data)
 print(cifar_data.shape)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <p>输出</p>
 <pre class="line-numbers language-none"><code class="language-none">(10000,)
 (10000, 3072)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
 <p>给 0-9 十个数字标签 手动打上文字标签</p>
 <pre class="line-numbers language-none"><code class="language-none">label_name&#x3D;[&#39;airplane&#39;,&#39;automobile&#39;,&#39;brid&#39;,&#39;cat&#39;,&#39;deer&#39;,&#39;dog&#39;,&#39;frog&#39;,&#39;horse&#39;,&#39;ship&#39;,&#39;truck&#39;]
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
 <p>注意事项以及重点：</p>
-<p>导包 matplotlib.pyplot ，由于环境用的jupyter notebook，还要在里面能显示，还得加上 %matplotlib inline<br>cifar_data[1]是长度为3072的数据，为数据集中第2张图片<br>reshap() 函数参数-1的意思是一个未知量，将其他矩阵维度输入后会自动生成一个完整矩阵<br>数组的排序方式是依次按照 r,g,b 三通道，不是之前某个地方学到的b,g,r的顺序<br>最坑的地方以为cv2可以直接读取numpy数组，结果发现要归一化才能读！！！</p>
-<h3 id="显示图片"><a href="#显示图片" class="headerlink" title="显示图片"></a>显示图片</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 拿第2个图片的np矩阵举例，将rgb矩阵转换为可显示图片
+<p>导包 matplotlib.pyplot ，由于环境用的 jupyter notebook，还要在里面能显示，还得加上 % matplotlib inline<br>
+cifar_data [1] 是长度为 3072 的数据，为数据集中第 2 张图片<br>
+ reshap () 函数参数 - 1 的意思是一个未知量，将其他矩阵维度输入后会自动生成一个完整矩阵<br>
+数组的排序方式是依次按照 r,g,b 三通道，不是之前某个地方学到的 b,g,r 的顺序<br>
+最坑的地方以为 cv2 可以直接读取 numpy 数组，结果发现要归一化才能读！！！</p>
+<h3 id="显示图片"><a class="markdownIt-Anchor" href="#显示图片">#</a> 显示图片</h3>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 拿第2个图片的np矩阵举例，将rgb矩阵转换为可显示图片
 
 import matplotlib.pyplot as plt
 %matplotlib inline
@@ -100,10 +98,9 @@ img[:,:,2]&#x3D;b&#x2F;255
 
 plt.imshow(img)
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 <img src="/2023/07/09/CIFAR%E6%95%B0%E6%8D%AE%E9%9B%86%E4%BD%BF%E7%94%A8-%E4%BB%8B%E7%BB%8D%E3%80%81%E4%B8%8B%E8%BD%BD%E8%AF%BB%E5%8F%96%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%98%BE%E7%A4%BA%E3%80%81%E5%8F%A6%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87/image-20230709190518314.png" class="" title="image-20230709190518314">
-
-<h3 id="另存为图片"><a href="#另存为图片" class="headerlink" title="另存为图片"></a>另存为图片</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 参考代码
+<h3 id="另存为图片"><a class="markdownIt-Anchor" href="#另存为图片">#</a> 另存为图片</h3>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 参考代码
 import numpy as np
 import cv2
 
@@ -139,7 +136,6 @@ def imwrite_images(k):#k的值可以选择1-10000范围内的值
     print(&quot;%d张图片保存完毕&quot;%k)
 
 imwrite_images(100)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
 ]]></content>
       <categories>
         <category>深度学习</category>
@@ -148,5 +144,14 @@ imwrite_images(100)<span aria-hidden="true" class="line-numbers-rows"><span></sp
         <tag>cifar</tag>
         <tag>使用教程</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>建站</title>
+    <url>/2023/06/19/%E5%BB%BA%E7%AB%99/</url>
+    <content><![CDATA[<p>之前有开发过一个博客前后端，后来还是放弃了搭建（服务器太贵了，维护升级代码也需要大量时间），买个域名用 github 还是省事，毕竟是为了写博客，有一个满足自己写作的平台就好了（嗯 花里胡哨的看多了还是简洁的好），嗯，目前来说就用 hexo 好了，之前的代码就用虚拟机跑跑算了。。</p>
+]]></content>
+      <categories>
+        <category>日常</category>
+      </categories>
   </entry>
 </search>
